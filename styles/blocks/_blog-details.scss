@@ -1,7 +1,7 @@
 @use '../helpers' as *;
 
 .blog-details {
-    border-bottom: var(--border);//добавил
+    border-bottom: var(--border);
 
     &__banner {
         display: flex;
@@ -45,23 +45,6 @@
         }
     }
 
-    // &__intro,
-    // &__main,
-    // &__actions,
-    // &__summary {
-    //     // padding: fluid(80, 40) rem(80);//было
-    //     padding-block: fluid(80, 40);
-        
-    //     // @include laptop {
-    //     //     padding-inline: rem(60);
-    //     // }//удалил
-
-    //     @include tablet {
-    //         padding-inline: 0;
-    //     }
-    // }
-
-    // ниже Мой селектор для фикса паддингов
     &__intro,
     &__main {
         padding-right: rem(80);
@@ -90,7 +73,6 @@
             padding-inline: 0;
         }
     }
-    // выше Мой селектор для фикса паддингов
 
     &__intro,
     &__actions,

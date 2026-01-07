@@ -9,7 +9,7 @@
             column-gap: rem(8);
         }
 
-        @include mobile-s {//я добавил по макету
+        @include mobile-s {
             justify-content: center;
         }
     }
@@ -30,6 +30,10 @@
             column-gap: rem(2);
             padding: rem(6) rem(12);
             font-size: rem(14);
+        }
+
+        @include hover {
+            border-color: var(--color-light);
         }
 
         &.is-active {

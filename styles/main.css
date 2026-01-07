@@ -663,7 +663,7 @@ button[aria-label]::before {
 .header__body {
   padding-block: 1.5rem;
   background-color: var(--color-dark-10);
-  border-block: var(--border);
+  border-bottom: var(--border);
 }
 @media (width <= 47.99875rem) {
   .header__body {
@@ -1590,6 +1590,16 @@ button[aria-label]::before {
     font-size: 0.875rem;
   }
 }
+@media (any-hover: hover) {
+  .blog-actions__button:hover {
+    border-color: var(--color-light);
+  }
+}
+@media (any-hover: none) {
+  .blog-actions__button:active {
+    border-color: var(--color-light);
+  }
+}
 .blog-actions__button.is-active svg * {
   fill: var(--color-red);
   stroke: var(--color-red);
@@ -2015,6 +2025,10 @@ button[aria-label]::before {
     overflow: hidden !important;
   }
 }
+.hero-alt__body {
+  border-bottom: var(--border);
+}
+
 .summary--2-cols .summary__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
